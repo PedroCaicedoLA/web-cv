@@ -1,0 +1,98 @@
+{
+    "name": "Pedro Caicedo",
+    "img": "http:\/\/2.gravatar.com\/avatar\/8b801a2544619e18ec571facb3f03029?s=100&d=Mystery%20Man&r=g",
+    "version": "1.0.0",
+    "default": {
+      "lang": "es"
+    },
+    "active": {
+      "url": "\/"
+    },
+    "serverURL": {
+        "news": "/news.json",
+        "blog": "/news.json",
+        "projects": "/news.json"
+    },
+    "pages": [
+      {
+        "id": 1,
+        "name": "Inicio",
+        "type": "menu",
+        "url": {
+          "es": "\/",
+          "en": "\/"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Blog",
+        "type": "menu",
+        "url": {
+          "es": "\/blog",
+          "en": "\/blog"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Proyectos",
+        "type": "menu",
+        "url": {
+          "es": "\/proyectos",
+          "en": "\/projects"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Acerca de",
+        "type": "menu",
+        "url": {
+          "es": "\/acerca-de",
+          "en": "\/about"
+        }
+      }
+    ],
+    "pagesIds": {
+      "Inicio": 0,
+      "Blog": 1,
+      "Proyectos": 2,
+      "Acerca de": 3
+    },
+    "socialNetworks": [
+      {
+        "id": 1,
+        "name": "twitter",
+        "classIcon": "fa-twitter",
+        "url": "https:\/\/twitter.com\/caicedo1089"
+      },
+      {
+        "id": 2,
+        "name": "facebook",
+        "classIcon": "fa-facebook",
+        "url": "https:\/\/www.facebook.com\/pedro.caicedo"
+      },
+      {
+        "id": 3,
+        "name": "google-plus",
+        "classIcon": "fa-google-plus",
+        "url": "https:\/\/plus.google.com\/+PedroCaicedo"
+      },
+      {
+        "id": 4,
+        "name": "instagram",
+        "classIcon": "fa-instagram",
+        "url": "https:\/\/www.instagram.com\/caicedo1089\/"
+      },
+      {
+        "id": 5,
+        "name": "github",
+        "classIcon": "fa-github",
+        "url": "https:\/\/github.com\/caicedo1089"
+      },
+      {
+        "id": 6,
+        "name": "linkedin",
+        "classIcon": "fa-linkedin",
+        "url": "https:\/\/www.linkedin.com\/in\/caicedo\/"
+      }
+    ]
+  }
