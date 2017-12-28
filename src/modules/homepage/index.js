@@ -31,7 +31,24 @@ async function asyncLoad(ctx, next)
 {
   try 
   {
-    ctx.news = await fetch(pc.getURL(pc.serverURL.news)).then(res => res.json());
+    let url
+
+    switch (ctx.path) 
+    {
+      case '/':
+        url = pc.serverURL.news
+        break;
+      
+      case '/blog':
+        url = pc.serverURL.blog
+        break;
+
+      default:
+        url = pc.serverURL.projects
+        break;
+    }
+
+    ctx.news = await fetch(pc.getURL(url)).then(res => res.json());
     next();
   } 
   catch (err) 

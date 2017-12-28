@@ -56,7 +56,7 @@ module.exports = function header (ctx, next)
     <div class="nav-wrapper">
       <div class="container">
         <a href="#!" class="brand-logo">
-          <img src="/pc/logoHeader.png"/>
+          <img src="${pc.getIMG('logoHeader.png')}"/>
         </a>
 
         <a href="#" data-target="nav-mobile" class="sidenav-trigger">
@@ -71,7 +71,6 @@ module.exports = function header (ctx, next)
         <!-- Menú Desktop -->
         <ul class="right hide-on-med-and-down">
           ${menu(true)}
-          <li><a href="#!"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
 
         <!-- Menú Mobile -->
@@ -79,17 +78,10 @@ module.exports = function header (ctx, next)
           
           <li class="logo-mobile center">
             <a href="/">
-              <img src="/pc/pcBlack.png"/>
+              <img src="${pc.getIMG('logoHeaderMobile.png')}"/>
             </a>
           </li>
           
-          <li class="search">
-            <div class="search-wrapper">
-              <input id="search" placeholder="${l.msg('Buscar')}">
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <div class="search-results"></div>
-            </div>
-          </li>
           ${menu()}
         </ul>
       </div>

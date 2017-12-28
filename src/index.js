@@ -2,36 +2,41 @@ require('babel-polyfill');
 
 var page = require('page');
 
-window.urlAPI = './server/'
+window.urlAPI = '/server/'
 window.pc = null
 
 async function asyncLoadConf() 
 {
-  try 
-  {
-    if(!window.conf)
+    //Cargamos las configuraciones
+    try 
     {
-        window.pc = await fetch(`${urlAPI}/conf.json`).then(res => res.json());
+        if(!window.conf)
+        {
+            window.pc = await fetch(`${urlAPI}/conf.json`).then(res => res.json());
+        }
+    } 
+    catch (err) 
+    {
+        return console.log(err);
     }
-  } 
-  catch (err) 
-  {
-    return console.log(err);
-  }
 
-  window.pc.getURL = strURL => `${urlAPI}/${strURL}`
+    //El idioma por defecto
+    localStorage.locale = localStorage.locale || pc.default.lang
+    
+    //Helper para obtener la url aplicando la url base 
+    window.pc.getURL = strURL => `${urlAPI}/${strURL}`
+    window.pc.getIMG = strURL => `/img/${strURL}`
 
-  //Los módulos
-  require('./modules/homepage');
-  require('./modules/about');
-  require('./modules/blog');
-  
-  //Siempre se coloca
-  require('./common/footer');
-  
-  page();
+    //Los módulos
+    require('./modules/homepage');
+    require('./modules/about');
+    require('./modules/blog');
+    require('./modules/404');
+
+    //Siempre se coloca
+    require('./common/footer');
+
+    page();
 }
-
-localStorage.locale = localStorage.locale || pc.default.lang;
 
 asyncLoadConf();

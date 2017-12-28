@@ -11,12 +11,12 @@ gulp.task('styles', function () {
     .src('index.scss')
     .pipe(sass())
     .pipe(rename('app.css'))
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('public/app'));
 })
 
 gulp.task('assets', function () {
   gulp
-    .src(['assets/*', 'assets/*/*'])
+    .src(['assets/*', 'assets/*/*', 'assets/*/*/*', 'assets/*/*/*/*'])
     .pipe(gulp.dest('public'));
 })
 
@@ -38,7 +38,7 @@ function compile(watch) {
       .on('error', function (err) { console.log(err); this.emit('end') })
       .pipe(source('index.js'))
       .pipe(rename('app.js'))
-      .pipe(gulp.dest('public'));
+      .pipe(gulp.dest('public/app'));
   }
 
   rebundle();

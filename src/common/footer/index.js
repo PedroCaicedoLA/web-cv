@@ -25,7 +25,7 @@ var $el = yo`
                 }
               </div>
               <div>
-                <a class="waves-effect waves-light btn btn-small light-green darken-4" style="font-size: 0.8rem;">
+                <a href="${pc.cvURL}" target="_black" class="waves-effect waves-light btn btn-small light-green darken-4" style="font-size: 0.8rem;">
                   <i class="fa fa-id-card fa-lg left" aria-hidden="true"></i>${l.msg('Hoja de Vida')}
                 </a>
               </div>
@@ -61,7 +61,7 @@ var $el = yo`
     </div>
     <div class="footer-copyright grey lighten-2">
       <div class="container grey-text text-darken-3">
-        <a class="" class="left"><img src="/pc/pcBlack.png" height="22px" style="margin-right:5px;"/></a>
+        <a class="" class="left"><img src="${pc.getIMG('logoFooter.png')}" height="22px" style="margin-right:5px;"/></a>
         <a class="grey-text text-darken-3 center" href="#!">v${pc.version}</a>
         <a class="grey-text text-darken-3 right" href="#!">${l.msg('Terminos y Condiciones')}</a>
       </div>

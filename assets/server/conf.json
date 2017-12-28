@@ -1,6 +1,7 @@
 {
     "name": "Pedro Caicedo",
     "img": "http:\/\/2.gravatar.com\/avatar\/8b801a2544619e18ec571facb3f03029?s=100&d=Mystery%20Man&r=g",
+    "cvURL": "https://www.linkedin.com/in/caicedo/",
     "version": "1.0.0",
     "default": {
       "lang": "es"
@@ -10,8 +11,8 @@
     },
     "serverURL": {
         "news": "/news.json",
-        "blog": "/news.json",
-        "projects": "/news.json"
+        "blog": "/blog.json",
+        "projects": "/projects.json"
     },
     "pages": [
       {

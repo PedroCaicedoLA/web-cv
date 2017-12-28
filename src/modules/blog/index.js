@@ -11,6 +11,11 @@ var l = require('../../utils/translate');
 
 let objPage = pc.pages[pc.pagesIds['Blog']]
 
+let showdown  = require('showdown'),
+converter = new showdown.Converter({
+  noHeaderId: false,
+});
+
 page(
   [`${objPage.url.es}/:url`, `${objPage.url.en}/:url`], 
   header, 
@@ -47,7 +52,8 @@ async function loadHTML (ctx, next)
   console.log('Se debe cargar el HTML Según la url -> ctx.params.url:', ctx.params.url)
 
   try{
-    ctx.html = await fetch(`/api/blog/${id}`).then(res => res.text());
+    let dataFile = await fetch(pc.getURL(`/blog/${id}/${localStorage.locale}.md`)).then(res => res.text());
+    ctx.html = converter.makeHtml(dataFile);
     next();
   } catch (err) {
     return console.log(err);
