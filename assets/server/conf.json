@@ -6,13 +6,19 @@
     "default": {
       "lang": "es"
     },
+    "langNotKey":{
+      "es":{},
+      "en":{}
+    },
     "active": {
       "url": "\/"
     },
     "serverURL": {
         "news": "/news.json",
         "blog": "/blog.json",
-        "projects": "/projects.json"
+        "projects": "/projects.json",
+        "terms-conditions": "/terms-conditions",
+        "versions": "/versions"
     },
     "pages": [
       {
@@ -50,13 +56,33 @@
           "es": "\/acerca-de",
           "en": "\/about"
         }
+      },
+      {
+        "id": 5,
+        "name": "Terminos y Condiciones",
+        "type": "other",
+        "url": {
+          "es": "/terminos-condiciones",
+          "en": "/terms-conditions"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Versiones",
+        "type": "other",
+        "url": {
+          "es": "/versiones",
+          "en": "/versions"
+        }
       }
     ],
     "pagesIds": {
       "Inicio": 0,
       "Blog": 1,
       "Proyectos": 2,
-      "Acerca de": 3
+      "Acerca de": 3,
+      "Terminos y Condiciones": 4,
+      "Versiones": 5
     },
     "socialNetworks": [
       {

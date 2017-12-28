@@ -31,6 +31,8 @@ async function asyncLoadConf()
     require('./modules/homepage');
     require('./modules/about');
     require('./modules/blog');
+    require('./modules/terms-conditions');
+    require('./modules/versions');
     require('./modules/404');
 
     //Siempre se coloca

@@ -62,8 +62,8 @@ var $el = yo`
     <div class="footer-copyright grey lighten-2">
       <div class="container grey-text text-darken-3">
         <a class="" class="left"><img src="${pc.getIMG('logoFooter.png')}" height="22px" style="margin-right:5px;"/></a>
-        <a class="grey-text text-darken-3 center" href="#!">v${pc.version}</a>
-        <a class="grey-text text-darken-3 right" href="#!">${l.msg('Terminos y Condiciones')}</a>
+        <a class="grey-text text-darken-3 center" href="${pc.pages[pc.pagesIds["Versiones"]].url[localStorage.locale]}">v${pc.version}</a>
+        <a class="grey-text text-darken-3 right" href="${pc.pages[pc.pagesIds["Terminos y Condiciones"]].url[localStorage.locale]}">${l.msg('Terminos y Condiciones')}</a>
       </div>
     </div>
   </footer>

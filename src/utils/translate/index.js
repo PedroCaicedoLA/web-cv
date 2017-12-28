@@ -37,9 +37,11 @@ module.exports = {
       var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
       text = msg.format(opts);
     }
+    else
+    {
+      pc.langNotKey[locale][text] = ''
+    }
 
-    //console.log('funciona:', text)
-    
     return text;
   },
   date: new IntlRelativeFormat(locale)
