@@ -1,8 +1,4 @@
 var express = require('express');
-var showdown  = require('showdown'),
-converter = new showdown.Converter({
-  noHeaderId: false,
-});
 
 var app = express();
 
