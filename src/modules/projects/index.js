@@ -2,21 +2,24 @@ import { CLIENT_RENEG_LIMIT } from 'tls';
 
 var page = require('page');
 var empty = require('empty-element');
+var template = require('./template');
 var title = require('title');
+var request = require('superagent');
 var header = require('../../common/header');
+var axios = require('axios');
 var l = require('../../utils/translate');
 var loading = require('../../utils/loading')
-var template = require('./template');
 
-let objPage = pc.pages[pc.pagesIds['Terminos y Condiciones']]
+let objPage = pc.pages[pc.pagesIds['Proyectos']]
 
 let showdown  = require('showdown'),
 converter = new showdown.Converter({
-  noHeaderId: false,
+  noHeaderId: true,
+  parseImgDimension: true,
 });
 
 page(
-  [`${objPage.url.es}`, `${objPage.url.en}`], 
+  [`${objPage.url.es}/:url`, `${objPage.url.en}/:url`], 
   header, 
   loading, 
   loadHTML,
@@ -34,16 +37,15 @@ page(
 )
 
 async function loadHTML (ctx, next)
-{  
-  try
-  {
-    console.log('pc',pc)
-    let dataFile = await fetch(pc.getURL(`${pc.serverURL['terms-conditions']}/${localStorage.locale}.md`)).then(res => res.text());
+{
+  let id = 1;
+  console.log('Se debe cargar el HTML Según la url -> ctx.params.url:', ctx.params.url)
+
+  try{
+    let dataFile = await fetch(pc.getURL(`/projects/${id}/${localStorage.locale}.md`)).then(res => res.text());
     ctx.html = converter.makeHtml(dataFile);
     next();
-  } 
-  catch (err) 
-  {
+  } catch (err) {
     return console.log(err);
   }
 }

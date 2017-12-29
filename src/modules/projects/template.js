@@ -7,7 +7,7 @@ module.exports = function (html)
   //console.log(html)
   //html = 'vacio'
   var $el = eval(`yo\`
-  <div class="container blog grey-text text-darken-3">
+  <div class="container projects grey-text text-darken-3">
     
     <div class="row">
 
@@ -26,6 +26,5 @@ module.exports = function (html)
   $el.innerHTML = html
 
   return main($el);
-  //return $el
 }
 

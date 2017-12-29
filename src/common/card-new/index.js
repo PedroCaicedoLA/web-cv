@@ -8,7 +8,7 @@ module.exports = function (objNew, withType)
   
     <div class="card-category">
       ${
-          objNew.categories.map( cat => yo`<span class="halfway-fab waves-effect waves-light red new badge" data-badge-caption="${cat}"></span>`)
+          objNew.categories.map( cat => yo`<span class="halfway-fab waves-effect waves-light red new badge" data-badge-caption="${l.msg(cat)}"></span>`)
       }
     </div>
 
@@ -17,8 +17,8 @@ module.exports = function (objNew, withType)
     </div>
     
     <div class="card-content">
-      <span class="card-title grey-text text-darken-4">${objNew.title}</span>
-      <p class="grey-text text-darken-3">${objNew.description}</p>
+      <span class="card-title grey-text text-darken-4">${l.msg(objNew.title[localStorage.locale])}</span>
+      <p class="grey-text text-darken-3">${l.msg(objNew.description[localStorage.locale])}</p>
     </div>
 
     <div class="card-action grey-text text-darken-1">

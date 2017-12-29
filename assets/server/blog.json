@@ -1,34 +1,24 @@
 [
-    {
-      "title": "\u00bfRedise\u00f1ar tu logo? Esta fue mi experiencia",
-      "description": "\u00bfNecesitas proyectar una idea, empresa o marca personal? sin duda alguna el logo es nuestro primer aliado. Algunos pensar\u00e1n que el proceso de dise\u00f1o o redise\u00f1o del logo es muy f\u00e1cil (esa puede ser nuestra primera impresi\u00f3n si s\u00f3lo vemos el resultado final) y muchas veces desconocemos por completo el proceso de creaci\u00f3n.",
-      "categories": [
-        "desarrollo",
-        "javascript"
-      ],
-      "type": "Blog",
-      "updatedAt": 1514416055741,
-      "createdAt": 1514416055741,
-      "banner": "http:\/\/next.materializecss.com\/images\/office.jpg",
-      "url": {
-        "en": "\/blog\/1",
-        "es": "\/blog\/1"
-      }
+  {
+    "title":{
+      "es":"MySQL, importar archivo SQL desde consola",
+      "en":"MySQL, import SQL file from console"
     },
-    {
-      "title": "\u00bfRedise\u00f1ar tu logo? Esta fue mi experiencia",
-      "description": "\u00bfNecesitas proyectar una idea, empresa o marca personal? sin duda alguna el logo es nuestro primer aliado. Algunos pensar\u00e1n que el proceso de dise\u00f1o o redise\u00f1o del logo es muy f\u00e1cil (esa puede ser nuestra primera impresi\u00f3n si s\u00f3lo vemos el resultado final) y muchas veces desconocemos por completo el proceso de creaci\u00f3n.",
-      "categories": [
-        "desarrollo",
-        "javascript"
-      ],
-      "type": "Blog",
-      "updatedAt": 1514416055741,
-      "createdAt": 1514416055741,
-      "banner": "http:\/\/next.materializecss.com\/images\/office.jpg",
-      "url": {
-        "en": "\/blog\/bli-bli",
-        "es": "\/blog\/bla-bla"
-      }
+    "description": {
+      "es":"Importar datos SQLs en MySQL es muy sencillo a través de PHPMyAdmin, ya sea desde la opción importar o directamente ejecutando el SQL. La cosa se complica cuando son muchos datos y el archivo SQL pesa más que el permitido por la opción importar ó, en el ejecutador de SQL web se hace pesado hacer un simple cortar y pegar(ctr + c y ctrl + v) debido a la gran cantidad de información.",
+      "en":"Importing SQL data in MySQL is very simple through PHPMyAdmin, either from the import option or directly executing the SQL. The thing gets complicated when there are a lot of data and the SQL file weighs more than the one allowed by the import option or, in the SQL web executer, it becomes heavy to make a simple cut and paste (ctr + cy ctrl + v) due to the large amount of information."
+    },
+    "categories": [
+      "desarrollo",
+      "javascript"
+    ],
+    "type": "Blog",
+    "updatedAt": 1514416055741,
+    "createdAt": 1514416055741,
+    "banner": "https://caicedo1089.github.io/server/blog/1/imgBanner.png",
+    "url": {
+      "en": "/blog/1",
+      "es": "/blog/1"
     }
-  ]
+  }
+]

@@ -23,5 +23,11 @@ module.exports = {
   'Páginas': 'Pages',
   'Inicio': 'Home',
   'Proyectos': 'Projects',
-  'Acerca de': 'About'
+  'Acerca de': 'About',
+  "Desarrollador de Software":"Software Developer",
+  "Hoja de Vida":"Curriculum vitae",
+  "Innovador por naturaleza, desarrollador de software de profesión y futbolista de corazón. Apasionado por la tecnología con más de 5 años de experiencia en el desarrollo de software, involucrado en desarrollos web, móviles, y de escritorio.":"Innovative by nature, professional software developer and footballer at heart. Passionate about technology with more than 5 years of experience in software development, involved in web, mobile and desktop development.",
+  "Terminos y Condiciones":"Terms and Contitions",
+  "Pedro Caicedo - Desarrollador de Software":"Pedro Caicedo - Software Developer",
+  "Leer más":"Read more"
 }

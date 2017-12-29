@@ -14,7 +14,7 @@ let showdown  = require('showdown'),
 converter = new showdown.Converter({
   noHeaderId: false,
 });
-console.log('Versiones:', objPage)
+
 page(
   [`${objPage.url.es}`, `${objPage.url.en}`], 
   header, 

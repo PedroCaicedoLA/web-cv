@@ -6,6 +6,17 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 
+app.get(
+  '*', 
+  function (req, res, next) 
+  {
+    const dataFile = require('fs').readFileSync(`./assets/index.html`, "utf8", function(err, data) { console.log('Error', err) })
+
+    res.send(dataFile);  
+
+  }
+);
+
 app.listen(
   3000, 
   function (err) 

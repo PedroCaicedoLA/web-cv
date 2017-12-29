@@ -8,12 +8,14 @@ var request = require('superagent');
 var header = require('../../common/header');
 var axios = require('axios');
 var l = require('../../utils/translate');
+var loading = require('../../utils/loading')
 
 let objPage = pc.pages[pc.pagesIds['Blog']]
 
 let showdown  = require('showdown'),
 converter = new showdown.Converter({
-  noHeaderId: false,
+  noHeaderId: true,
+  parseImgDimension: true,
 });
 
 page(
@@ -33,18 +35,6 @@ page(
     empty(main).appendChild(template(ctx.html));
   }
 )
-
-function loading(ctx, next) 
-{
-  var container = document.createElement('div');
-  var loadingEl = document.createElement('div');
-  container.classList.add('loader-container');
-  loadingEl.classList.add('loader');
-  container.appendChild(loadingEl);
-  var main = document.getElementById('main-container');
-  empty(main).appendChild(container);
-  next();
-}
 
 async function loadHTML (ctx, next)
 {

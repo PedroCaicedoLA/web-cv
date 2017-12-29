@@ -76,8 +76,9 @@ module.exports = function ()
       <div class="col s12">
 
         <h4>¿Deseas contactarme?</h4>
-        <p>Puedes escribirme directamente al info@pcaicedo.com o llenar el formulario de contacto.</p>
+        <p>Puedes escribirme directamente al info@pcaicedo.com o a través de mis redes sociales.</p>
         
+        <!--
         <form class="col s12 card-panel" style="padding: 20px;">
 
           <div class="row">
@@ -117,7 +118,7 @@ module.exports = function ()
             </button>
           </div>
         </form>
-
+        -->
       </div>
     </div>
 

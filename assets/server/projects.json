@@ -1,18 +1,24 @@
 [
   {
-    "title": "\u00bfRedise\u00f1ar tu logo? Esta fue mi experiencia",
-    "description": "\u00bfNecesitas proyectar una idea, empresa o marca personal? sin duda alguna el logo es nuestro primer aliado. Algunos pensar\u00e1n que el proceso de dise\u00f1o o redise\u00f1o del logo es muy f\u00e1cil (esa puede ser nuestra primera impresi\u00f3n si s\u00f3lo vemos el resultado final) y muchas veces desconocemos por completo el proceso de creaci\u00f3n.",
+    "title":{
+      "es":"Visualización de volúmenes utilizando funciones de transferencia multidimensionales",
+      "en":"Volume rendering using multidimensional transfer functions"
+    },
+    "description": {
+      "es":"En este trabajo se realiza una implementación de una función de transferencia multidimensional, expandiendo su dominio a través de la magnitud del gradiente y la segunda derivada direccional a lo largo del gradiente, estos cálculos fueron obtenidos por el método de reconstrucción de suma de convoluciones. Además se implementó una interfaz basada en widget para la edición de la función de transferencia. Las pruebas demuestran que las funciones de transferencia multidimensionales permiten mejorar la especificación de la clasificación en los volúmenes, pudiendo aislar partes del volumen de manera efectiva.",
+      "en":"In this work an implementation of a multidimensional transfer function is performed, expanding its domain through the magnitude of the gradient and the second directional derivative along the gradient, these calculations were obtained by the method of reconstruction of sum of convolutions. In addition, a widget-based interface was implemented for editing the transfer function. The tests show that the multidimensional transfer functions allow to improve the specification of the classification in the volumes, being able to isolate parts of the volume in an effective way."
+    },
     "categories": [
-      "desarrollo",
-      "javascript"
+      "Computación Gráfica",
+      "Investigación"
     ],
-    "type": "Blog",
+    "type": "project",
     "updatedAt": 1514416055741,
     "createdAt": 1514416055741,
-    "banner": "http:\/\/next.materializecss.com\/images\/office.jpg",
+    "banner": "https://caicedo1089.github.io/server/blog/1/imgBanner.png",
     "url": {
-      "en": "\/blog\/1",
-      "es": "\/blog\/1"
+      "en": "/projects/1",
+      "es": "/projects/1"
     }
   }
 ]
