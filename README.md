@@ -1,20 +1,52 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Web CV
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Web CV es un proyecto web de tipo [SPA](https://es.wikipedia.org/wiki/Single-page_application), permite crear una web personal. Este proyecto tiene las siguientes páginas:
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+- Blog (Lista las entradas y muestra cada entrada en caso de seleccionarse)
+- Proyectos (Lista los proyectos y muestra cada proyecto en caso de seleccionarse)
+- Acerca de (Página donde se explica el proposito de la web y se muestra información de contacto)
+- Versiones (Permite ver la versión actual de Web CV, así como el registro de cambios/changelog)
+- Terminos y Condiciones (Página donde se puede describir los terminos de uso de la página o cualquier otra información legal que quieras aclarar)
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+En procura de facilitar la reutilización del contenido de las entradas(blog), proyecto, versiones y terminos/condiciones se utiliza dicha información en archivos de formato .md (Markdown), que es el mismo formato que utiliza github como primera documentación de los repositorios (README.md).
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Demostración
+
+Ver la web ![https://caicedo1089.github.io](https://caicedo1089.github.io) basada en este proyecto.
+
+![Demostración](https://https://caicedo1089.github.io/img/webcv/demo.gif)
+
+## Instalación
+
+```
+git clone https://github.com/caicedo1089/web-cv.git
+
+cd web-cv
+
+npm install
+```
+
+## Uso
+
+Asumiendo que se realizó la instalación según el paso anterior.
+
+```
+
+gulp
+
+node server.js
+```
+
+Y en la url localhost:3000 al abrirlo en un navegador se debe ver la página por defecto.
+
+Si quieres saber un poco más sobre su uso y funcionamiento lo invitamos a ver el video de youtube.
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/GZasf7z_hAQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+
+## Créditos
+- [Pedro Caicedo](http://pcaicedo.com)
+
+## Licencia
+
+[MIT](https://opensource.org/licenses/MIT)

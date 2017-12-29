@@ -13,10 +13,7 @@ var loading = require('../../utils/loading')
 let objPage = pc.pages[pc.pagesIds['Blog']]
 
 let showdown  = require('showdown'),
-converter = new showdown.Converter({
-  noHeaderId: true,
-  parseImgDimension: true,
-});
+converter = new showdown.Converter(pc.showdownjs);
 
 page(
   [`${objPage.url.es}/:url`, `${objPage.url.en}/:url`], 

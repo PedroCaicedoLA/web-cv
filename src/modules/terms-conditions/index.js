@@ -11,9 +11,7 @@ var template = require('./template');
 let objPage = pc.pages[pc.pagesIds['Terminos y Condiciones']]
 
 let showdown  = require('showdown'),
-converter = new showdown.Converter({
-  noHeaderId: false,
-});
+converter = new showdown.Converter(pc.showdownjs);
 
 page(
   [`${objPage.url.es}`, `${objPage.url.en}`], 

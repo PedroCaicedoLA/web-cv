@@ -20,6 +20,11 @@
         "terms-conditions": "/terms-conditions",
         "versions": "/versions"
     },
+    "showdownjs":{
+      "noHeaderId": true,
+      "parseImgDimension": true,
+      "headerLevelStart":3
+    },
     "pages": [
       {
         "id": 1,
