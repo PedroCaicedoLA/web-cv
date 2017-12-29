@@ -1,5 +1,3 @@
-![Showdown][sd-logo]
-
 # Visualización de volúmenes utilizando funciones de transferencia multidimensionales
 
 El despliegue de volumen es una técnica de visualización que consiste en la proyección de las muestras del volumen en una imagen. Este proceso se divide en varias etapas: la reconstrucción de muestras, la clasificación y la composición. En particular, la clasificación es la etapa de mayor importancia, pues es aquí donde se asignan las propiedades ópticas a las muestras del volumen. En la clasificación, se enfatizan o no los diversos materiales presentes en el volumen. La manera más común de realizar la clasificación es mediante el uso de funciones de transferencia.
@@ -11,25 +9,15 @@ En este trabajo se realiza una implementación de una función de transferencia 
 ## Imágenes de Demostración
 
 <div class="carousel carousel-slider center">
-	<div class="carousel-fixed-item center">
-	  <a class="btn waves-effect white grey-text darken-text-2">button</a>
-	</div>
-	<div class="carousel-item red white-text" href="#one!">
-	  <h2>First Panel</h2>
-	  <p class="white-text">This is your first panel</p>
-	</div>
-	<div class="carousel-item amber white-text" href="#two!">
-	  <h2>Second Panel</h2>
-	  <p class="white-text">This is your second panel</p>
-	</div>
-	<div class="carousel-item green white-text" href="#three!">
-	  <h2>Third Panel</h2>
-	  <p class="white-text">This is your third panel</p>
-	</div>
-	<div class="carousel-item blue white-text" href="#four!">
-	  <h2>Fourth Panel</h2>
-	  <p class="white-text">This is your fourth panel</p>
-	</div>
+	<div class="carousel-item center" href="#one!">
+		<p><img src="https://caicedo1089.github.io/server/projects/1/img01.jpg" height="100%" ></p>
+    </div>
+    <div class="carousel-item center" href="#two!">
+		<p><img src="https://caicedo1089.github.io/server/projects/1/img02.jpg" height="100%" ></p>
+    </div>
+    <div class="carousel-item center" href="#three!">
+		<p><img src="https://caicedo1089.github.io/server/projects/1/img03.jpg" height="100%" ></p>
+    </div>
 </div>
 
 ## Video de Demostración

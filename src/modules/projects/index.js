@@ -33,6 +33,12 @@ page(
     
     var main = document.getElementById('main-container');
     empty(main).appendChild(template(ctx.html));
+
+    //Soporte a carusel
+    $('.carousel').carousel({
+			fullWidth: true,
+			indicators: true
+		});
   }
 )
 
