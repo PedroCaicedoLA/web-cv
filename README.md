@@ -14,7 +14,7 @@ En procura de facilitar la reutilización del contenido de las entradas(blog), p
 
 Ver la web [https://caicedo1089.github.io](https://caicedo1089.github.io) basada en este proyecto.
 
-![Demostración](https://https://caicedo1089.github.io/img/webcv/demo.gif)
+![Demostración](https://caicedo1089.github.io/img/webcv/demo.gif)
 
 ## Instalación
 
