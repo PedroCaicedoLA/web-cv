@@ -17,8 +17,8 @@ module.exports = function (objNew, withType)
     </div>
     
     <div class="card-content">
-      <span class="card-title grey-text text-darken-4">${l.msg(objNew.title[localStorage.locale])}</span>
-      <p class="grey-text text-darken-3">${l.msg(objNew.description[localStorage.locale])}</p>
+      <span class="card-title grey-text text-darken-4">${objNew.title[localStorage.locale]}</span>
+      <p class="grey-text text-darken-3">${objNew.description[localStorage.locale]}</p>
     </div>
 
     <div class="card-action grey-text text-darken-1">

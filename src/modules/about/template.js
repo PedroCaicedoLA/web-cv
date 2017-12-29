@@ -10,9 +10,11 @@ module.exports = function ()
     <div class="row">
       <div class="col s12">
         <h3>${l.msg('Acerca de')}</h3>
-        <p>
-          <b>PCaicedo</b> ${l.msg('es una página web que nace de la necesidad de compartir los conocimientos y experiencias en el ambito profesional y cotidiano. El contenido de la página principalmente está enfocado al desarrollo de software, aunque también encontrarás algunos datos y concejos útiles de la cotidianidad. A continuación lo invitamos a que conozca un poco más.')}
-        </p>
+        ${eval(`yo\`
+          <p>
+            ${l.msg('<b>PCaicedo</b> es una página web que nace de la necesidad de compartir los conocimientos y experiencias en el ambito profesional y cotidiano. El contenido de la página principalmente está enfocado al desarrollo de software, aunque también encontrarás algunos datos y concejos útiles de la cotidianidad. A continuación lo invitamos a que conozca un poco más.')}
+          </p>
+        \``)}
       </div>
     </div>
 
@@ -21,53 +23,60 @@ module.exports = function ()
 
         <div class="card hovercard">
 
-          <div class="cardheader">
+          <div class="cardheader" style="background: url(/img/backgroundAbout.png); background-size: cover;">
           </div>
 
           <div class="avatar">
-              <img alt="Pedro Caicedo - Desarrollador de Software" src="http://2.gravatar.com/avatar/8b801a2544619e18ec571facb3f03029?s=100&amp;d=Mystery%20Man&amp;r=g" height="100" width="100">
+              <img alt="${l.msg('Pedro Caicedo - Desarrollador de Software')}" src="${pc.img}" height="100" width="100">
           </div>
 
           <div class="info">
             
             <div class="title">
-              Pedro Caicedo
+              ${pc.name}
             </div>
             
-            <div class="desc">Desarrollador de Software</div>
+            <div class="desc">${l.msg('Desarrollador de Software')}</div>
             
             <div class="desc">
-              <a  style="font-size: 0.8rem;" class="waves-effect waves-light btn btn-small light-green darken-4" href="/cv">
+              <a  style="font-size: 0.8rem;" class="waves-effect waves-light btn btn-small light-green darken-4" href="${pc.cvURL}" target="_black">
                 <i style="font-size: 1rem;" class="fa fa-id-card"></i>
-                Hoja de vida
+                ${l.msg('Hoja de Vida')}
               </a>
             </div>
           </div>
 
           <div class="bottom">
-            <a class="twitter" href="https://twitter.com/caicedo1089" target="_black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="facebook" href="https://www.facebook.com/pedro.caicedo" target="_black"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="google-plus" href="https://plus.google.com/+PedroCaicedo" target="_black"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            <a class="instagram" href="https://www.instagram.com/caicedo1089/" target="_black"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a class="github" href="https://github.com/caicedo1089" target="_black"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a class="linkedin" href="https://co.linkedin.com/in/pedro-antonio-caicedo-vargas-29b30133" target="_black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            ${
+              pc.socialNetworks.map(network =>{
+                return yo`
+                <a class="grey-text text-darken-3" href="${network.url}" target="_black">
+                  <i class="fa ${network.classIcon}" aria-hidden="true"></i>
+                </a>`
+              })
+            }
           </div>
 
         </div>
       </div>
 
       <div class="col s12 m6 l4">
-        <h5>Reseña</h5>
-        <p class="text-justify">
-          Innovador por naturaleza, desarrollador de software de profesión y futbolista de corazón. Apasionado por la tecnología con más de 5 años de experiencia en el desarrollo de software, involucrado en desarrollos web, móviles, y de escritorio. Formado en la UCV y miembro del grupo de desarrollo <a href="https://cuado.co">Cuado</a>. En aprendizaje constante desde internet, buscando nuevas oportunidades de crecimiento profesional y personal.
-        </p>
+        <h5>${l.msg('Reseña')}</h5>
+        ${eval(`yo\`
+          <p>
+            ${l.msg('Innovador por naturaleza, desarrollador de software de profesión y futbolista de corazón. Apasionado por la tecnología con más de 5 años de experiencia en el desarrollo de software, involucrado en desarrollos web, móviles, y de escritorio. Formado en la <a href="http://campusvirtual.ucv.ve/" target="_black">UCV</a> y miembro del grupo de desarrollo <a href="https://cuado.co" target="_black">Cuado</a>. En aprendizaje constante desde internet (<a href="https://platzi.com/r/caicedo1089/" target="_black">Platzi</a>), buscando nuevas oportunidades de crecimiento profesional y personal.')}
+          </p>
+        \``)}
+          
       </div>
 
       <div class="col s12 m12 l4">
-        <h5>Intereses</h5>
-        <p class="text-justify">
-          Desde mi niñez las ciencias me han interesado, el saber como funcionan los objetos o sistemas, conocer el por qué de su funcionamiento; eran preguntas muy usuales que no he dejado de hacer desde entonces. Al encender mi primera computadora surgieron muchas preguntas que he tratado de responder con la ayuda de la academia, grupos de desarrollo e internet. Todas las áreas donde se ve involucrado un sistema de cómputo son interesantes, pero en la actualidad estoy enfocado en el desarrollo web y móvil.
-        </p>
+        <h5>${l.msg('Intereses')}</h5>
+        ${eval(`yo\`
+          <p>
+            ${l.msg('Desde mi niñez las ciencias me han interesado, el saber como funcionan los objetos o sistemas, conocer el por qué de su funcionamiento; eran preguntas muy usuales que no he dejado de hacer desde entonces. Al encender mi primera computadora surgieron muchas preguntas que he tratado de responder con la ayuda de la academia, grupos de desarrollo e internet. Todas las áreas donde se ve involucrado un sistema de cómputo son interesantes, pero en la actualidad estoy enfocado en el desarrollo web y móvil.')}
+          </p>
+        \``)}
       </div>
 
     </div>
@@ -75,8 +84,12 @@ module.exports = function ()
     <div class="row">
       <div class="col s12">
 
-        <h4>¿Deseas contactarme?</h4>
-        <p>Puedes escribirme directamente al info@pcaicedo.com o a través de mis redes sociales.</p>
+        <h4>${l.msg('¿Deseas contactarme?')}</h4>
+        ${eval(`yo\`
+          <p>
+          ${l.msg('Puedes escribirme directamente al <a href="mailto:info@pcaicedo.com">info@pcaicedo.com</a> o a través de mis redes sociales.')}
+          </p>
+        \``)}
         
         <!--
         <form class="col s12 card-panel" style="padding: 20px;">

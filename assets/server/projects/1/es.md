@@ -6,6 +6,9 @@ La implementación de la función de transferencia se realiza generalmente media
 
 En este trabajo se realiza una implementación de una función de transferencia multidimensional, expandiendo su dominio a través de la magnitud del gradiente y la segunda derivada direccional a lo largo del gradiente, estos cálculos fueron obtenidos por el método de reconstrucción de suma de convoluciones. Además se implementó una interfaz basada en widget para la edición de la función de transferencia. Las pruebas demuestran que las funciones de transferencia multidimensionales permiten mejorar la especificación de la clasificación en los volúmenes, pudiendo aislar partes del volumen de manera efectiva.
 
+<a class="github" href="https://github.com/caicedo1089/ftm" target="_black"><i class="fa fa-github" aria-hidden="true"></i> Repositorio GitHub</a>
+<a class="github right" href="https://caicedo1089.github.io/server/projects/1/PedroCaicedo-FTM-TEG.pdf" target="_black"><i class="fa fa-file" aria-hidden="true"></i> Documento del T.E.G.</a>
+
 ## Imágenes de Demostración
 
 <div class="carousel carousel-slider center">

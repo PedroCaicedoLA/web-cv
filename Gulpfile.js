@@ -20,6 +20,13 @@ gulp.task('assets', function () {
     .pipe(gulp.dest('public'));
 })
 
+gulp.task('404', function () {
+  gulp
+    .src('public/index.html')
+    .pipe(rename('404.html'))
+    .pipe(gulp.dest('public'));
+})
+
 function compile(watch) {
   var bundle = browserify('./src/index.js', {debug: true});
 
@@ -50,6 +57,6 @@ gulp.task('build', function () {
 
 gulp.task('watch', function () { return compile(true); });
 
-gulp.task('default', ['styles', 'assets', 'build']);
+gulp.task('default', ['styles', 'assets', '404', 'build']);
 
 

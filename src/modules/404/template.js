@@ -1,21 +1,20 @@
 var yo = require('yo-yo');
 var main = require('../../common/main');
 var l = require('../../utils/translate');
-let cardNew = require('../../common/card-new');
 
-module.exports = function (news) 
+module.exports = function () 
 {
   var $el = yo`
-  <div class="container timeline">
+  <div class="container">
     
     <div class="row">
 
-      <div class="col s12 cards-container">
+      <div class="col s12">
 
-        ${
-          news.map( objNew => cardNew(objNew, true))
-        }
-
+        <h2 class="grey-text text-darken-4">${l.msg('Error 404 - Página no encontrada')}</h2>
+        
+        <h4 class="grey-text text-darken-3">${l.msg('Disculpe pero esa página no está en nuestros servidores :\'(')}</h4>
+      
       </div>
 
     </div>
