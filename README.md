@@ -12,7 +12,7 @@ En procura de facilitar la reutilización del contenido de las entradas(blog), p
 
 ## Demostración
 
-Ver la web ![https://caicedo1089.github.io](https://caicedo1089.github.io) basada en este proyecto.
+Ver la web [https://caicedo1089.github.io](https://caicedo1089.github.io) basada en este proyecto.
 
 ![Demostración](https://https://caicedo1089.github.io/img/webcv/demo.gif)
 
@@ -39,10 +39,9 @@ node server.js
 
 Y en la url localhost:3000 al abrirlo en un navegador se debe ver la página por defecto.
 
-Si quieres saber un poco más sobre su uso y funcionamiento lo invitamos a ver el video de youtube.
+Si quieres saber un poco más sobre su uso y funcionamiento lo invitamos a ver el video de youtube:
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/GZasf7z_hAQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
+[Ver video](https://www.youtube.com/embed/GZasf7z_hAQ)
 
 ## Créditos
 - [Pedro Caicedo](http://pcaicedo.com)
