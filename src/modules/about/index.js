@@ -4,9 +4,7 @@ var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
 var title = require('title');
-var request = require('superagent');
 var header = require('../../common/header');
-var axios = require('axios');
 var l = require('../../utils/translate');
 
 page(
