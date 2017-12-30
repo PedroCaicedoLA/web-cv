@@ -9,7 +9,7 @@
     "web-personal"
   ],
   "author": "Pedro Caicedo <caicedo1089@gmail.com> (http://pcaicedo.com)",
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/caicedo1089/web-cv"
   },
