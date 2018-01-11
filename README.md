@@ -41,7 +41,7 @@ Y en la url localhost:3000 al abrirlo en un navegador se debe ver la página por
 
 Si quieres saber un poco más sobre su uso y funcionamiento lo invitamos a ver el video de youtube:
 
-[Ver video](https://www.youtube.com/watch?v=U5l1_Q73EkI)
+[Ver video](https://www.youtube.com/watch?v=U5l1_Q73EkI&list=PLIVZy3jI8GHMXVPhvpdy9aThRTD711nAX)
 
 ## Créditos
 - [Pedro Caicedo](http://pcaicedo.com)
